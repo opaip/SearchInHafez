@@ -12,7 +12,7 @@ def load_data():
         embeddings = np.load(EMBEDDINGS_PATH)
         with open(POEMS_PATH, 'r', encoding='utf-8') as f:
             poems = json.load(f)
-        print("✅ Data and embeddings loaded successfully.")
+        print("Data and embeddings loaded successfully.")
         return embeddings, poems
     except FileNotFoundError:
         print(f"Error: Could not find data files ('{EMBEDDINGS_PATH}' or '{POEMS_PATH}').")
@@ -39,12 +39,12 @@ if __name__ == "__main__":
     poem_embeddings, poems = load_data()
     
     print("\n--- Hafez Semantic Search Engine ---")
-    print("Enter your query to find similar verses. Type 'خروج' to exit.")
+    print("Enter your query to find similar verses. Type 'exit' to exit.")
     
     while True:
         user_query = input("\n> Your query: ")
         
-        if user_query.lower() in ['خروج', 'exit']:
+        if user_query.lower() in ['exit']:
             print("Goodbye!")
             break
             
