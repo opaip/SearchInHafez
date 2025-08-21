@@ -14,8 +14,8 @@
 
 1.  **کلون کردن ریپازیتوری:**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name
+    git clone github.com/opaip/SearchInHafez.git
+    cd SearchInHafez
     ```
 
 2.  **نصب نیازمندی‌ها:**
@@ -23,7 +23,7 @@
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    pip install -r requirements.txt
+    pip install -r req.txt
     ```
 
 ## Usage (نحوه استفاده)
